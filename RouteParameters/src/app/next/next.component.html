@@ -1,1 +1,27 @@
+<div class="container"><h2>
+ Hello from Next!
+</h2>
 
+<div align='center'><h1>List of Users</h1></div>
+
+
+<table class ="table table-striped" >
+  <tr *ngFor="let u of users">
+    <td>
+      {{u.id}}
+    </td>
+    <td>
+      {{u.name}}
+    </td>
+    <td>
+      {{u.model}}
+    </td>
+    <td>
+      <button class="btn btn-info" [routerLink]= "['/next', u.id]">Go to this product</button>
+    </td>
+
+  </tr>
+</table>
+
+
+<button class="btn btn-success" routerLink='/home'>Back</button></div>
