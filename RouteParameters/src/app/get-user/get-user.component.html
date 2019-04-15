@@ -1,1 +1,27 @@
+<div *ngIf="displayData">
+  <table style = "background-color: black; color: white" class ="table  table-bordered">
+      <tr >
+          <td><strong>
+              Id:
+           </strong> </td>
+        <td>
+          {{user.id}}
+        </td></tr>
+    <tr>
+        <td><strong>
+            Name:
+         </strong> </td>
+      <td>
+          {{user.name}}
+        </td></tr>
+    <tr>
+        <td><strong>
+            Model
+         </strong> </td>
+      <td>
+          {{user.model}}
+        </td></tr>
 
+    </table>
+
+<button class = "btn btn-danger" [routerLink]="['/next']" routerLinkActive="router-link-active" >Back</button>
