@@ -5,7 +5,6 @@ import { NextComponent } from './next/next.component';
 import { ThirdComponent } from './third/third.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EditNextComponent } from './edit-next/edit-next.component';
-import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [];
 
@@ -15,7 +14,7 @@ const routes: Routes = [];
     {path: 'next', component: NextComponent, 
     children: [
       {path: '', redirectTo: 'third', pathMatch: 'full'},
-      {path: 'third', component: ThirdComponent, canDeactivate:[AuthGuard]},
+      {path: 'third', component: ThirdComponent},
       {path: 'info', component: EditNextComponent}
 
     ]},
