@@ -1,0 +1,4 @@
+<div class="container"><button class="btn btn-info" [routerLink]="[{outlets: {popup: ['next']}}]">See Child Routing</button>
+</div>
+<router-outlet #o= "outlet"></router-outlet>
+<router-outlet name="popup"></router-outlet>
